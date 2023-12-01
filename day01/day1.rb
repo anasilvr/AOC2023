@@ -49,7 +49,7 @@ end
 ## recycling part 1's code...
 
 input.each do |line|
-    ret = 0
+  ret = 0
     line.map do |nb|
         nb.gsub!(/[^0-9\n]/, '')
         if nb.length == 1
@@ -60,5 +60,5 @@ input.each do |line|
             ret += (nb[0] + nb[-1]).to_i
         end
     end
-    puts ret
+  puts ret
 end
