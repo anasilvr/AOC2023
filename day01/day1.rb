@@ -50,7 +50,7 @@ end
 
 input.each do |line|
     ret = 0
-    line.each_with_index do |nb, i|
+    line.map do |nb|
         nb.gsub!(/[^0-9\n]/, '')
         if nb.length == 1
             ret += (nb.to_s * 2).to_i
